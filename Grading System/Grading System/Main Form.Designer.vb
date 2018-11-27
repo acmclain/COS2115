@@ -22,7 +22,6 @@ Partial Class frmMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-<<<<<<< HEAD
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.BindingNavigator1 = New System.Windows.Forms.BindingNavigator(Me.components)
@@ -39,14 +38,10 @@ Partial Class frmMain
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
-=======
-        Me.btnExit = New System.Windows.Forms.Button()
->>>>>>> 7fc1dd033ccb5a400bac2fb9cf995fd1455751ef
         Me.SuspendLayout()
         '
-        'btnExit
+        'BindingNavigator1
         '
-<<<<<<< HEAD
         Me.BindingNavigator1.AddNewItem = Me.BindingNavigatorAddNewItem
         Me.BindingNavigator1.CountItem = Me.BindingNavigatorCountItem
         Me.BindingNavigator1.DeleteItem = Me.BindingNavigatorDeleteItem
@@ -146,33 +141,24 @@ Partial Class frmMain
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
-=======
-        Me.btnExit.Location = New System.Drawing.Point(412, 202)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 1
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
->>>>>>> 7fc1dd033ccb5a400bac2fb9cf995fd1455751ef
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 237)
-<<<<<<< HEAD
         Me.Controls.Add(Me.BindingNavigator1)
-=======
-        Me.Controls.Add(Me.btnExit)
->>>>>>> 7fc1dd033ccb5a400bac2fb9cf995fd1455751ef
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
         Me.ShowIcon = False
         Me.Text = "Life Prep Academy"
+        CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BindingNavigator1.ResumeLayout(False)
+        Me.BindingNavigator1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-<<<<<<< HEAD
 
     Friend WithEvents BindingNavigator1 As BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
@@ -186,7 +172,4 @@ Partial Class frmMain
     Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
-=======
-    Friend WithEvents btnExit As Button
->>>>>>> 7fc1dd033ccb5a400bac2fb9cf995fd1455751ef
 End Class
