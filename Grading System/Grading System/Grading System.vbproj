@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03F63478-E837-492F-9331-5382743DBB05}</ProjectGuid>
+    <ProjectGuid>{D82BC0F8-6800-4311-8E08-EA3F4CAD6124}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Grading_System.My.MyApplication</StartupObject>
     <RootNamespace>Grading_System</RootNamespace>
@@ -96,9 +96,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
