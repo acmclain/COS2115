@@ -37,14 +37,10 @@ Partial Class frmMain
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
 <<<<<<< HEAD
-<<<<<<< HEAD
         Me.Button1 = New System.Windows.Forms.Button()
 =======
         Me.btnExit = New System.Windows.Forms.Button()
 >>>>>>> parent of 7fc1dd0... :)
-=======
-        Me.Button1 = New System.Windows.Forms.Button()
->>>>>>> parent of 08f1482... ur welcome
         CType(Me.BindingNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BindingNavigator1.SuspendLayout()
         Me.SuspendLayout()
@@ -153,7 +149,6 @@ Partial Class frmMain
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
-<<<<<<< HEAD
         'btnExit
 >>>>>>> parent of 7fc1dd0... :)
         '
@@ -259,10 +254,6 @@ Partial Class frmMain
         '
         'Button1
         '
-=======
-        'Button1
-        '
->>>>>>> parent of 08f1482... ur welcome
         Me.Button1.Location = New System.Drawing.Point(366, 175)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -276,14 +267,10 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 237)
 <<<<<<< HEAD
-<<<<<<< HEAD
         Me.Controls.Add(Me.Button1)
 =======
         Me.Controls.Add(Me.btnExit)
 >>>>>>> parent of 7fc1dd0... :)
-=======
-        Me.Controls.Add(Me.Button1)
->>>>>>> parent of 08f1482... ur welcome
         Me.Controls.Add(Me.BindingNavigator1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmMain"
@@ -310,12 +297,8 @@ Partial Class frmMain
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
 <<<<<<< HEAD
-<<<<<<< HEAD
     Friend WithEvents Button1 As Button
 =======
     Friend WithEvents btnExit As Button
 >>>>>>> parent of 7fc1dd0... :)
-=======
-    Friend WithEvents Button1 As Button
->>>>>>> parent of 08f1482... ur welcome
 End Class
