@@ -3,10 +3,10 @@ C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.exe
 C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.pdb
 C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.xml
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbprojResolveAssemblyReference.cache
-C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmMain.resources
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.Resources.resources
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbproj.GenerateResource.Cache
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.exe
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.xml
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.pdb
-C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.Connect.resources
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmAddStudent.resources
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmMainMenu.resources

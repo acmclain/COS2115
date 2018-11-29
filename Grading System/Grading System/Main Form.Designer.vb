@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmMain
+Partial Class frmMainMenu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -66,7 +66,7 @@ Partial Class frmMain
         Me.btnAdd.Text = "Add Student"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'frmMain
+        'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -75,7 +75,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboStudents)
         Me.Controls.Add(Me.btnExit)
-        Me.Name = "frmMain"
+        Me.Name = "frmMainMenu"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Life Prep Academy"

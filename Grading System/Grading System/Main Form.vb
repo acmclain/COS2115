@@ -2,7 +2,7 @@
 Imports System.Data
 Imports System.Data.SqlClient
 
-Public Class frmMain
+Public Class frmMainMenu
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
     End Sub
@@ -35,6 +35,7 @@ Public Class frmMain
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        frmAddStudent.Show()
 
     End Sub
 End Class
