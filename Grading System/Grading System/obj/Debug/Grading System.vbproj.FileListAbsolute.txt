@@ -9,3 +9,4 @@ C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbproj.
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.exe
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.xml
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.pdb
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.Connect.resources

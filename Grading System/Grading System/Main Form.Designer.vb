@@ -29,13 +29,15 @@ Partial Class frmMain
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblLast = New System.Windows.Forms.Label()
+        Me.btnDisplay = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(412, 202)
+        Me.btnExit.Location = New System.Drawing.Point(618, 311)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(112, 35)
         Me.btnExit.TabIndex = 1
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -44,19 +46,17 @@ Partial Class frmMain
         '
         Me.lblStudentID.BackColor = System.Drawing.Color.Lavender
         Me.lblStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblStudentID.Location = New System.Drawing.Point(40, 37)
-        Me.lblStudentID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStudentID.Location = New System.Drawing.Point(60, 57)
         Me.lblStudentID.Name = "lblStudentID"
-        Me.lblStudentID.Size = New System.Drawing.Size(67, 16)
+        Me.lblStudentID.Size = New System.Drawing.Size(100, 24)
         Me.lblStudentID.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(37, 16)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(56, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 13)
+        Me.Label1.Size = New System.Drawing.Size(91, 20)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Student ID:"
         '
@@ -64,29 +64,26 @@ Partial Class frmMain
         '
         Me.blbFirst.BackColor = System.Drawing.Color.Lavender
         Me.blbFirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.blbFirst.Location = New System.Drawing.Point(158, 37)
-        Me.blbFirst.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.blbFirst.Location = New System.Drawing.Point(237, 57)
         Me.blbFirst.Name = "blbFirst"
-        Me.blbFirst.Size = New System.Drawing.Size(67, 16)
+        Me.blbFirst.Size = New System.Drawing.Size(100, 24)
         Me.blbFirst.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(155, 16)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(232, 25)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 13)
+        Me.Label2.Size = New System.Drawing.Size(90, 20)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "First Name:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(284, 16)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(426, 25)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 13)
+        Me.Label3.Size = New System.Drawing.Size(90, 20)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Last Name:"
         '
@@ -94,17 +91,26 @@ Partial Class frmMain
         '
         Me.lblLast.BackColor = System.Drawing.Color.Lavender
         Me.lblLast.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblLast.Location = New System.Drawing.Point(287, 37)
-        Me.lblLast.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblLast.Location = New System.Drawing.Point(430, 57)
         Me.lblLast.Name = "lblLast"
-        Me.lblLast.Size = New System.Drawing.Size(67, 16)
+        Me.lblLast.Size = New System.Drawing.Size(100, 24)
         Me.lblLast.TabIndex = 7
+        '
+        'btnDisplay
+        '
+        Me.btnDisplay.Location = New System.Drawing.Point(60, 243)
+        Me.btnDisplay.Name = "btnDisplay"
+        Me.btnDisplay.Size = New System.Drawing.Size(100, 30)
+        Me.btnDisplay.TabIndex = 8
+        Me.btnDisplay.Text = "Display"
+        Me.btnDisplay.UseVisualStyleBackColor = True
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 237)
+        Me.ClientSize = New System.Drawing.Size(748, 365)
+        Me.Controls.Add(Me.btnDisplay)
         Me.Controls.Add(Me.lblLast)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -112,7 +118,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblStudentID)
         Me.Controls.Add(Me.btnExit)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmMain"
         Me.ShowIcon = False
         Me.Text = "Life Prep Academy"
@@ -127,4 +132,5 @@ Partial Class frmMain
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lblLast As Label
+    Friend WithEvents btnDisplay As Button
 End Class
