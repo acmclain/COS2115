@@ -12,9 +12,9 @@ Public Class frmMainMenu
         'Mercy
         Dim connectionString As String = "Data Source = DESKTOP-II3CLP1\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
         'Hannah
-        ' Dim connectionString As String = "Data Source = MIS-W10-030\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
+        'Dim connectionString As String = "Data Source = MIS-W10-030\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
         'Andrew
-        '  Dim connectionString As String = "Data Source = DESKTOP-6VVI9NG\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
+        'Dim connectionString As String = "Data Source = DESKTOP-6VVI9NG\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
 
         Using connection As New SqlConnection(connectionString)
             connection.Open()
