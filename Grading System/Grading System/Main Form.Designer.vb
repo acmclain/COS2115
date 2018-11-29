@@ -29,7 +29,6 @@ Partial Class frmMain
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblLast = New System.Windows.Forms.Label()
-        Me.btnDisplay = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
@@ -96,21 +95,11 @@ Partial Class frmMain
         Me.lblLast.Size = New System.Drawing.Size(100, 24)
         Me.lblLast.TabIndex = 7
         '
-        'btnDisplay
-        '
-        Me.btnDisplay.Location = New System.Drawing.Point(60, 243)
-        Me.btnDisplay.Name = "btnDisplay"
-        Me.btnDisplay.Size = New System.Drawing.Size(100, 30)
-        Me.btnDisplay.TabIndex = 8
-        Me.btnDisplay.Text = "Display"
-        Me.btnDisplay.UseVisualStyleBackColor = True
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(748, 365)
-        Me.Controls.Add(Me.btnDisplay)
         Me.Controls.Add(Me.lblLast)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -132,5 +121,4 @@ Partial Class frmMain
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lblLast As Label
-    Friend WithEvents btnDisplay As Button
 End Class

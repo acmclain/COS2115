@@ -26,7 +26,7 @@ Public Class frmMain
         End Using
     End Sub
 
-    Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
+    Private Sub btnDisplay_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class
