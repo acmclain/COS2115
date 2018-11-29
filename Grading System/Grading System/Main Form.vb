@@ -8,6 +8,9 @@ Public Class frmMain
     End Sub
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Hannah = MIS-W10-030\SQLEXPRESS
+        'Andrew = DESKTOP-6VVI9NG\SQLEXPRESS
+
         Dim connectionString As String = "Data Source = DESKTOP-II3CLP1\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
 
         Using connection As New SqlConnection(connectionString)
