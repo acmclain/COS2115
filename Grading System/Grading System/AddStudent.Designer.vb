@@ -24,21 +24,22 @@ Partial Class frmAddStudent
     Private Sub InitializeComponent()
         Me.txtFirst = New System.Windows.Forms.TextBox()
         Me.txtLast = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtDOB = New System.Windows.Forms.TextBox()
+        Me.txtStatus = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtComments = New System.Windows.Forms.TextBox()
         Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSubmit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'txtFirst
         '
         Me.txtFirst.Location = New System.Drawing.Point(25, 44)
-        Me.txtFirst.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtFirst.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFirst.Name = "txtFirst"
         Me.txtFirst.Size = New System.Drawing.Size(106, 20)
         Me.txtFirst.TabIndex = 0
@@ -46,26 +47,26 @@ Partial Class frmAddStudent
         'txtLast
         '
         Me.txtLast.Location = New System.Drawing.Point(153, 44)
-        Me.txtLast.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtLast.Margin = New System.Windows.Forms.Padding(2)
         Me.txtLast.Name = "txtLast"
         Me.txtLast.Size = New System.Drawing.Size(106, 20)
         Me.txtLast.TabIndex = 1
         '
-        'TextBox1
+        'txtDOB
         '
-        Me.TextBox1.Location = New System.Drawing.Point(285, 44)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(65, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.txtDOB.Location = New System.Drawing.Point(285, 44)
+        Me.txtDOB.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDOB.Name = "txtDOB"
+        Me.txtDOB.Size = New System.Drawing.Size(65, 20)
+        Me.txtDOB.TabIndex = 2
         '
-        'TextBox2
+        'txtStatus
         '
-        Me.TextBox2.Location = New System.Drawing.Point(385, 44)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(106, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.txtStatus.Location = New System.Drawing.Point(385, 44)
+        Me.txtStatus.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtStatus.Name = "txtStatus"
+        Me.txtStatus.Size = New System.Drawing.Size(106, 20)
+        Me.txtStatus.TabIndex = 3
         '
         'Label1
         '
@@ -117,13 +118,13 @@ Partial Class frmAddStudent
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Comments"
         '
-        'TextBox3
+        'txtComments
         '
-        Me.TextBox3.Location = New System.Drawing.Point(25, 96)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(466, 20)
-        Me.TextBox3.TabIndex = 9
+        Me.txtComments.Location = New System.Drawing.Point(25, 96)
+        Me.txtComments.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtComments.Name = "txtComments"
+        Me.txtComments.Size = New System.Drawing.Size(466, 20)
+        Me.txtComments.TabIndex = 9
         '
         'btnCancel
         '
@@ -134,23 +135,33 @@ Partial Class frmAddStudent
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
+        'btnSubmit
+        '
+        Me.btnSubmit.Location = New System.Drawing.Point(335, 156)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.TabIndex = 11
+        Me.btnSubmit.Text = "Submit"
+        Me.btnSubmit.UseVisualStyleBackColor = True
+        '
         'frmAddStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(517, 191)
+        Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtComments)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtStatus)
+        Me.Controls.Add(Me.txtDOB)
         Me.Controls.Add(Me.txtLast)
         Me.Controls.Add(Me.txtFirst)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmAddStudent"
         Me.Text = "AddStudent"
         Me.ResumeLayout(False)
@@ -160,13 +171,14 @@ Partial Class frmAddStudent
 
     Friend WithEvents txtFirst As TextBox
     Friend WithEvents txtLast As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtDOB As TextBox
+    Friend WithEvents txtStatus As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtComments As TextBox
     Friend WithEvents btnCancel As Button
+    Friend WithEvents btnSubmit As Button
 End Class
