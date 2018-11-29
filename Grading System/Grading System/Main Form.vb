@@ -27,7 +27,6 @@ Public Class frmMain
     End Sub
 
     Private Sub btnDisplay_Click(sender As Object, e As EventArgs) Handles btnDisplay.Click
-        Connect.Show()
 
     End Sub
 End Class
