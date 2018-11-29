@@ -38,117 +38,110 @@ Partial Class frmAddStudent
         '
         'txtFirst
         '
-        Me.txtFirst.Location = New System.Drawing.Point(25, 44)
-        Me.txtFirst.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtFirst.Location = New System.Drawing.Point(38, 68)
         Me.txtFirst.Name = "txtFirst"
-        Me.txtFirst.Size = New System.Drawing.Size(106, 20)
+        Me.txtFirst.Size = New System.Drawing.Size(157, 26)
         Me.txtFirst.TabIndex = 0
         '
         'txtLast
         '
-        Me.txtLast.Location = New System.Drawing.Point(153, 44)
-        Me.txtLast.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtLast.Location = New System.Drawing.Point(230, 68)
         Me.txtLast.Name = "txtLast"
-        Me.txtLast.Size = New System.Drawing.Size(106, 20)
+        Me.txtLast.Size = New System.Drawing.Size(157, 26)
         Me.txtLast.TabIndex = 1
         '
         'txtDOB
         '
-        Me.txtDOB.Location = New System.Drawing.Point(285, 44)
-        Me.txtDOB.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtDOB.Location = New System.Drawing.Point(428, 68)
         Me.txtDOB.Name = "txtDOB"
-        Me.txtDOB.Size = New System.Drawing.Size(65, 20)
+        Me.txtDOB.Size = New System.Drawing.Size(96, 26)
         Me.txtDOB.TabIndex = 2
         '
         'txtStatus
         '
-        Me.txtStatus.Location = New System.Drawing.Point(385, 44)
-        Me.txtStatus.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtStatus.Location = New System.Drawing.Point(578, 68)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(106, 20)
+        Me.txtStatus.Size = New System.Drawing.Size(157, 26)
         Me.txtStatus.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 29)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(33, 45)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(57, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 20)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "First Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(151, 29)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(226, 45)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(86, 20)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Last Name"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(283, 29)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(424, 45)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 13)
+        Me.Label3.Size = New System.Drawing.Size(99, 20)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Date of Birth"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(382, 29)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(573, 45)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.Size = New System.Drawing.Size(60, 20)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Status "
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(22, 81)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(33, 115)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 13)
+        Me.Label5.Size = New System.Drawing.Size(86, 20)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Comments"
         '
         'txtComments
         '
-        Me.txtComments.Location = New System.Drawing.Point(25, 96)
-        Me.txtComments.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtComments.Location = New System.Drawing.Point(38, 138)
+        Me.txtComments.Multiline = True
         Me.txtComments.Name = "txtComments"
-        Me.txtComments.Size = New System.Drawing.Size(466, 20)
+        Me.txtComments.Size = New System.Drawing.Size(697, 94)
         Me.txtComments.TabIndex = 9
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(416, 156)
+        Me.btnCancel.Location = New System.Drawing.Point(624, 240)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.Size = New System.Drawing.Size(112, 35)
         Me.btnCancel.TabIndex = 10
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
         'btnSubmit
         '
-        Me.btnSubmit.Location = New System.Drawing.Point(335, 156)
+        Me.btnSubmit.Location = New System.Drawing.Point(502, 240)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(75, 23)
+        Me.btnSubmit.Size = New System.Drawing.Size(112, 35)
         Me.btnSubmit.TabIndex = 11
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = True
         '
         'frmAddStudent
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(517, 191)
+        Me.ClientSize = New System.Drawing.Size(776, 294)
         Me.Controls.Add(Me.btnSubmit)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.txtComments)
@@ -161,7 +154,6 @@ Partial Class frmAddStudent
         Me.Controls.Add(Me.txtDOB)
         Me.Controls.Add(Me.txtLast)
         Me.Controls.Add(Me.txtFirst)
-        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frmAddStudent"
         Me.Text = "AddStudent"
         Me.ResumeLayout(False)

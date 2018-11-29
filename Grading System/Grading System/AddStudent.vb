@@ -16,7 +16,7 @@
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Dim strFirst As String = txtFirst.Text
         Dim strLast As String = txtLast.Text
-        Dim strStatus As String = txtstatus.Text
+        Dim strStatus As String = txtStatus.Text
         Dim strComments As String = txtComments.Text
         Dim dblDOB As Double
 
