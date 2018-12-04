@@ -26,11 +26,12 @@ Partial Class frmMainMenu
         Me.cboStudents = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnCourses = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(471, 148)
+        Me.btnExit.Location = New System.Drawing.Point(470, 238)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(112, 35)
@@ -66,11 +67,21 @@ Partial Class frmMainMenu
         Me.btnAdd.Text = "Add Student"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'btnCourses
+        '
+        Me.btnCourses.Location = New System.Drawing.Point(448, 135)
+        Me.btnCourses.Name = "btnCourses"
+        Me.btnCourses.Size = New System.Drawing.Size(157, 34)
+        Me.btnCourses.TabIndex = 5
+        Me.btnCourses.Text = "Course Catalog"
+        Me.btnCourses.UseVisualStyleBackColor = True
+        '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(748, 365)
+        Me.Controls.Add(Me.btnCourses)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboStudents)
@@ -87,4 +98,5 @@ Partial Class frmMainMenu
     Friend WithEvents cboStudents As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnAdd As Button
+    Friend WithEvents btnCourses As Button
 End Class

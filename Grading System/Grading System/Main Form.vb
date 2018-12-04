@@ -34,4 +34,8 @@ Public Class frmMainMenu
         frmAddStudent.Show()
 
     End Sub
+
+    Private Sub cboStudents_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboStudents.SelectedIndexChanged
+
+    End Sub
 End Class
