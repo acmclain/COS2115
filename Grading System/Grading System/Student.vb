@@ -7,4 +7,8 @@
     Private Sub frmStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmMainMenu.Hide()
     End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        MessageBox.Show("Are you sure you want to delete this student?", "Delete Student", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+    End Sub
 End Class
