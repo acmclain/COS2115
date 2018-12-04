@@ -30,34 +30,32 @@ Partial Class frmStudent
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.lblStudentID = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblFullName
         '
         Me.lblFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblFullName.Location = New System.Drawing.Point(15, 21)
-        Me.lblFullName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblFullName.Location = New System.Drawing.Point(24, 32)
         Me.lblFullName.Name = "lblFullName"
-        Me.lblFullName.Size = New System.Drawing.Size(231, 20)
+        Me.lblFullName.Size = New System.Drawing.Size(384, 30)
         Me.lblFullName.TabIndex = 0
         '
         'lblDOB
         '
         Me.lblDOB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDOB.Location = New System.Drawing.Point(15, 53)
-        Me.lblDOB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblDOB.Location = New System.Drawing.Point(24, 82)
         Me.lblDOB.Name = "lblDOB"
-        Me.lblDOB.Size = New System.Drawing.Size(78, 21)
+        Me.lblDOB.Size = New System.Drawing.Size(129, 31)
         Me.lblDOB.TabIndex = 1
         '
         'btnCourseList
         '
         Me.btnCourseList.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnCourseList.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCourseList.Location = New System.Drawing.Point(208, 161)
-        Me.btnCourseList.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCourseList.Location = New System.Drawing.Point(347, 248)
         Me.btnCourseList.Name = "btnCourseList"
-        Me.btnCourseList.Size = New System.Drawing.Size(77, 25)
+        Me.btnCourseList.Size = New System.Drawing.Size(129, 38)
         Me.btnCourseList.TabIndex = 2
         Me.btnCourseList.Text = "Course List"
         Me.btnCourseList.UseVisualStyleBackColor = False
@@ -67,31 +65,29 @@ Partial Class frmStudent
         Me.lblComments.BackColor = System.Drawing.SystemColors.Control
         Me.lblComments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblComments.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblComments.Location = New System.Drawing.Point(15, 81)
-        Me.lblComments.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblComments.Location = New System.Drawing.Point(24, 125)
         Me.lblComments.Name = "lblComments"
-        Me.lblComments.Size = New System.Drawing.Size(401, 70)
+        Me.lblComments.Size = New System.Drawing.Size(666, 107)
         Me.lblComments.TabIndex = 3
         '
         'btnExit
         '
-        Me.btnExit.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnExit.Location = New System.Drawing.Point(329, 161)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnExit.BackColor = System.Drawing.Color.DarkOrchid
+        Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnExit.Location = New System.Drawing.Point(549, 248)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(73, 25)
+        Me.btnExit.Size = New System.Drawing.Size(122, 38)
         Me.btnExit.TabIndex = 4
         Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'lblStatus
         '
         Me.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblStatus.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblStatus.Location = New System.Drawing.Point(288, 53)
-        Me.lblStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStatus.Location = New System.Drawing.Point(480, 82)
         Me.lblStatus.Name = "lblStatus"
-        Me.lblStatus.Size = New System.Drawing.Size(127, 20)
+        Me.lblStatus.Size = New System.Drawing.Size(211, 30)
         Me.lblStatus.TabIndex = 5
         '
         'lblStudentID
@@ -99,28 +95,39 @@ Partial Class frmStudent
         Me.lblStudentID.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.lblStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblStudentID.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblStudentID.Location = New System.Drawing.Point(288, 21)
-        Me.lblStudentID.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblStudentID.Location = New System.Drawing.Point(480, 32)
         Me.lblStudentID.Name = "lblStudentID"
-        Me.lblStudentID.Size = New System.Drawing.Size(127, 20)
+        Me.lblStudentID.Size = New System.Drawing.Size(211, 30)
         Me.lblStudentID.TabIndex = 6
         '
         'btnDelete
         '
         Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(18, 162)
+        Me.btnDelete.Location = New System.Drawing.Point(30, 249)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.Size = New System.Drawing.Size(124, 35)
         Me.btnDelete.TabIndex = 7
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label1.Location = New System.Drawing.Point(33, 288)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(123, 20)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "(Don't Touch!)"
+        '
         'frmStudent
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(437, 257)
+        Me.ClientSize = New System.Drawing.Size(729, 317)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.lblStudentID)
         Me.Controls.Add(Me.lblStatus)
@@ -129,12 +136,13 @@ Partial Class frmStudent
         Me.Controls.Add(Me.btnCourseList)
         Me.Controls.Add(Me.lblDOB)
         Me.Controls.Add(Me.lblFullName)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "frmStudent"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Information"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -146,4 +154,5 @@ Partial Class frmStudent
     Friend WithEvents lblStatus As Label
     Friend WithEvents lblStudentID As Label
     Friend WithEvents btnDelete As Button
+    Friend WithEvents Label1 As Label
 End Class

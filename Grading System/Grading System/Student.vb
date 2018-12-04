@@ -9,6 +9,10 @@
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        MessageBox.Show("Are you sure you want to delete this student?", "Delete Student", MessageBoxButtons.YesNo, MessageBoxIcon.Error)
+        If MessageBox.Show("Are you sure you want to delete this student?", "Delete Student", MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.No Then
+            MessageBox.Show("Operation Cancelled, good choice!")
+        Else
+            'Insert code to delete records from database
+        End If
     End Sub
 End Class
