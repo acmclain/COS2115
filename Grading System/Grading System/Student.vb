@@ -4,4 +4,7 @@
         Me.Close()
         frmMainMenu.Show()
     End Sub
+    Private Sub frmStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        frmMainMenu.Hide()
+    End Sub
 End Class
