@@ -31,6 +31,7 @@ Partial Class frmStudent
         Me.lblStudentID = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnEdit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblFullName
@@ -122,11 +123,23 @@ Partial Class frmStudent
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "(Don't Touch!)"
         '
+        'btnEdit
+        '
+        Me.btnEdit.BackColor = System.Drawing.Color.DarkOrchid
+        Me.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnEdit.Location = New System.Drawing.Point(229, 249)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(129, 38)
+        Me.btnEdit.TabIndex = 9
+        Me.btnEdit.Text = "Edit Info"
+        Me.btnEdit.UseVisualStyleBackColor = False
+        '
         'frmStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 317)
+        Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.lblStudentID)
@@ -155,4 +168,5 @@ Partial Class frmStudent
     Friend WithEvents lblStudentID As Label
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnEdit As Button
 End Class
