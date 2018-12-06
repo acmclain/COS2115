@@ -3,22 +3,26 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class frmMainMenu
+    Private dataReader As SqlDataReader
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
 
     End Sub
 
+
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
 
         Using connection As New SqlConnection(connectionString)
             connection.Open()
 
-            Dim queryString As String = "SELECT FirstName, LastName FROM dbo.Students"
+            Dim queryString As String = "SELECT StudentID, FirstName, LastName FROM dbo.Students"
+
 
             Dim command As New SqlCommand(queryString, connection)
 
 
-            Dim dataReader As SqlDataReader
             dataReader = command.ExecuteReader()
             While dataReader.Read
                 ' Write code to insert an Item into dropdownlist

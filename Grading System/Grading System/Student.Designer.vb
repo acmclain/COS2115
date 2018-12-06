@@ -53,7 +53,7 @@ Partial Class frmStudent
         '
         Me.btnCourseList.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnCourseList.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCourseList.Location = New System.Drawing.Point(347, 248)
+        Me.btnCourseList.Location = New System.Drawing.Point(391, 249)
         Me.btnCourseList.Name = "btnCourseList"
         Me.btnCourseList.Size = New System.Drawing.Size(129, 38)
         Me.btnCourseList.TabIndex = 2
