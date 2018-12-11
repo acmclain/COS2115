@@ -57,12 +57,21 @@ Public Class frmStudent
                 Else
                     'Delete from Student database
                     'Dim command = New SqlCommmand("DELETE FROM Student WHERE ")
+                    Using connection As New SqlConnection(connectionString)
+                        connection.Open()
 
+                        Dim queryString As String = "DELETE FROM dbo.Students WHERE StudentID = " & intStudentID
+                        Dim command As New SqlCommand(queryString, connection)
+
+                        command.ExecuteNonQuery()
+                        connection.Close()
+                    End Using
                 End If
                 'Insert code to delete records from database
             End If
         End If
-
+        Me.Close()
+        frmMainMenu.Show()
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
