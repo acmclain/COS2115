@@ -21,15 +21,20 @@ Public Class frmMainMenu
 
 
             Dim command As New SqlCommand(queryString, connection)
+            Dim comboSource As New Dictionary(Of String, String)()
+            comboSource.Add("", "")
 
 
             dataReader = command.ExecuteReader()
             While dataReader.Read
-                ' Write code to insert an Item into dropdownlist
-                cboStudents.Items.Add(dataReader("FirstName").ToString() & dataReader("LastName").ToString())
+                'Add each student and student id to dictionary.
+                comboSource.Add(dataReader("StudentID"), dataReader("FirstName").ToString() & dataReader("LastName"))
             End While
+            'Display each student with hidden corresponding key in the combo box.
+            cboStudents.DataSource = New BindingSource(comboSource, Nothing)
+            cboStudents.DisplayMember = "Value"
+            cboStudents.ValueMember = "Key"
             connection.Close()
-            'cboStudents.Items.AddRange({command})
 
         End Using
     End Sub
@@ -39,7 +44,10 @@ Public Class frmMainMenu
         frmAddStudent.Show()
 
     End Sub
-    Private Sub cboStudents_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboStudents.SelectedIndexChanged
+    Private Sub cboStudents_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboStudents.SelectionChangeCommitted
+        'Get the key from the selected item. 
+        Dim key As String = DirectCast(cboStudents.SelectedItem, KeyValuePair(Of String, String)).Key
+        frmStudent.txtstudentID = key
         frmStudent.Show()
     End Sub
 End Class

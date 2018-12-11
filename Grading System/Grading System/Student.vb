@@ -3,13 +3,14 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class frmStudent
-
+    Public txtstudentID As String
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
         frmMainMenu.Show()
     End Sub
     Private Sub frmStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmMainMenu.Hide()
+        lblStudentID.Text = txtstudentID
 
     End Sub
 
