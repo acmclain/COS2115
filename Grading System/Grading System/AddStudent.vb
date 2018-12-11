@@ -19,7 +19,7 @@ Public Class frmAddStudent
             connection.Open()
             MessageBox.Show("Database is open")
 
-            Dim Command = New SqlCommand("INSERT INTO Students (FirstName, LastName, DOB, Status, Comments) VALUES ('" & txtFirst.Text & "','" & txtLast.Text & "','" & txtDOB.Text & "','" & txtStatus.Text & "','" & txtComments.Text & "')", connection)
+            Dim Command = New SqlCommand("INSERT INTO Students (FirstName, LastName, DOB, Status, Comments) VALUES ('" & txtFirst.Text.Trim & "','" & txtLast.Text.Trim & "','" & txtDOB.Text.Trim & "','" & txtStatus.Text.Trim & "','" & txtComments.Text.Trim & "')", connection)
 
             Command.ExecuteNonQuery()
 

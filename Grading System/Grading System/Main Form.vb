@@ -47,7 +47,7 @@ Public Class frmMainMenu
     Private Sub cboStudents_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboStudents.SelectionChangeCommitted
         'Get the key from the selected item. 
         Dim key As String = DirectCast(cboStudents.SelectedItem, KeyValuePair(Of String, String)).Key
-        frmStudent.txtstudentID = key
+        frmStudent.intStudentID = key
         frmStudent.Show()
     End Sub
 End Class

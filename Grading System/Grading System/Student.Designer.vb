@@ -32,12 +32,19 @@ Partial Class frmStudent
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblFullName
         '
         Me.lblFullName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblFullName.Location = New System.Drawing.Point(24, 32)
+        Me.lblFullName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblFullName.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblFullName.Location = New System.Drawing.Point(24, 55)
         Me.lblFullName.Name = "lblFullName"
         Me.lblFullName.Size = New System.Drawing.Size(384, 30)
         Me.lblFullName.TabIndex = 0
@@ -45,7 +52,9 @@ Partial Class frmStudent
         'lblDOB
         '
         Me.lblDOB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDOB.Location = New System.Drawing.Point(24, 82)
+        Me.lblDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.lblDOB.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblDOB.Location = New System.Drawing.Point(24, 129)
         Me.lblDOB.Name = "lblDOB"
         Me.lblDOB.Size = New System.Drawing.Size(129, 31)
         Me.lblDOB.TabIndex = 1
@@ -54,7 +63,7 @@ Partial Class frmStudent
         '
         Me.btnCourseList.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnCourseList.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCourseList.Location = New System.Drawing.Point(391, 249)
+        Me.btnCourseList.Location = New System.Drawing.Point(391, 311)
         Me.btnCourseList.Name = "btnCourseList"
         Me.btnCourseList.Size = New System.Drawing.Size(129, 38)
         Me.btnCourseList.TabIndex = 2
@@ -65,8 +74,9 @@ Partial Class frmStudent
         '
         Me.lblComments.BackColor = System.Drawing.SystemColors.Control
         Me.lblComments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblComments.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblComments.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblComments.Location = New System.Drawing.Point(24, 125)
+        Me.lblComments.Location = New System.Drawing.Point(24, 191)
         Me.lblComments.Name = "lblComments"
         Me.lblComments.Size = New System.Drawing.Size(666, 107)
         Me.lblComments.TabIndex = 3
@@ -75,7 +85,7 @@ Partial Class frmStudent
         '
         Me.btnExit.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnExit.Location = New System.Drawing.Point(549, 248)
+        Me.btnExit.Location = New System.Drawing.Point(549, 312)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(122, 38)
         Me.btnExit.TabIndex = 4
@@ -85,8 +95,9 @@ Partial Class frmStudent
         'lblStatus
         '
         Me.lblStatus.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblStatus.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblStatus.Location = New System.Drawing.Point(480, 82)
+        Me.lblStatus.Location = New System.Drawing.Point(479, 129)
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.Size = New System.Drawing.Size(211, 30)
         Me.lblStatus.TabIndex = 5
@@ -95,8 +106,9 @@ Partial Class frmStudent
         '
         Me.lblStudentID.AccessibleRole = System.Windows.Forms.AccessibleRole.None
         Me.lblStudentID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lblStudentID.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold)
         Me.lblStudentID.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblStudentID.Location = New System.Drawing.Point(480, 32)
+        Me.lblStudentID.Location = New System.Drawing.Point(479, 55)
         Me.lblStudentID.Name = "lblStudentID"
         Me.lblStudentID.Size = New System.Drawing.Size(211, 30)
         Me.lblStudentID.TabIndex = 6
@@ -105,7 +117,7 @@ Partial Class frmStudent
         '
         Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnDelete.ForeColor = System.Drawing.Color.White
-        Me.btnDelete.Location = New System.Drawing.Point(30, 249)
+        Me.btnDelete.Location = New System.Drawing.Point(29, 314)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(124, 35)
@@ -117,7 +129,7 @@ Partial Class frmStudent
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(33, 288)
+        Me.Label1.Location = New System.Drawing.Point(30, 354)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(123, 20)
         Me.Label1.TabIndex = 8
@@ -127,18 +139,73 @@ Partial Class frmStudent
         '
         Me.btnEdit.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEdit.Location = New System.Drawing.Point(229, 249)
+        Me.btnEdit.Location = New System.Drawing.Point(226, 311)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(129, 38)
         Me.btnEdit.TabIndex = 9
         Me.btnEdit.Text = "Edit Info"
         Me.btnEdit.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label2.Location = New System.Drawing.Point(20, 171)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(99, 20)
+        Me.Label2.TabIndex = 10
+        Me.Label2.Text = "Comments:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label3.Location = New System.Drawing.Point(20, 109)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(117, 20)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "Date of Birth:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label4.Location = New System.Drawing.Point(475, 109)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(67, 20)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Status:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label5.Location = New System.Drawing.Point(20, 35)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(60, 20)
+        Me.Label5.TabIndex = 13
+        Me.Label5.Text = "Name:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label6.Location = New System.Drawing.Point(475, 35)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(102, 20)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "Student ID:"
+        '
         'frmStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(729, 317)
+        Me.ClientSize = New System.Drawing.Size(729, 392)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnDelete)
@@ -169,4 +236,9 @@ Partial Class frmStudent
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnEdit As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
 End Class

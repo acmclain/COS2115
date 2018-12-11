@@ -3,14 +3,44 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class frmStudent
-    Public txtstudentID As String
+    Private dataReader As SqlDataReader
+    Private txtFirstName As String
+    Private txtLastName As String
+    Private txtDOB As String
+    Private txtStatus As String
+    Private txtComments As String
+
+
+    Public intStudentID As Integer
+
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
         frmMainMenu.Show()
     End Sub
     Private Sub frmStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmMainMenu.Hide()
-        lblStudentID.Text = txtstudentID
+        lblStudentID.Text = intStudentID
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
+
+            Dim queryString As String = "SELECT FirstName, LastName, DOB, Status, Comments FROM dbo.Students WHERE StudentID = " & intStudentID
+            Dim command As New SqlCommand(queryString, connection)
+
+            dataReader = command.ExecuteReader()
+            While dataReader.Read
+                txtFirstName = dataReader("FirstName")
+                txtLastName = dataReader("LastName")
+                txtDOB = dataReader("DOB")
+                txtStatus = dataReader("Status")
+                txtComments = dataReader("Comments")
+            End While
+
+            connection.Close()
+        End Using
+        lblFullName.Text = txtFirstName.Trim & " " & txtLastName
+        lblDOB.Text = txtDOB
+        lblStatus.Text = txtStatus
+        lblComments.Text = txtComments
 
     End Sub
 
