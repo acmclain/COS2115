@@ -24,7 +24,6 @@ Partial Class frmStudent
     Private Sub InitializeComponent()
         Me.lblFullName = New System.Windows.Forms.Label()
         Me.lblDOB = New System.Windows.Forms.Label()
-        Me.btnCourseList = New System.Windows.Forms.Button()
         Me.lblComments = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.lblStatus = New System.Windows.Forms.Label()
@@ -58,17 +57,6 @@ Partial Class frmStudent
         Me.lblDOB.Name = "lblDOB"
         Me.lblDOB.Size = New System.Drawing.Size(129, 31)
         Me.lblDOB.TabIndex = 1
-        '
-        'btnCourseList
-        '
-        Me.btnCourseList.BackColor = System.Drawing.Color.DarkOrchid
-        Me.btnCourseList.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCourseList.Location = New System.Drawing.Point(391, 311)
-        Me.btnCourseList.Name = "btnCourseList"
-        Me.btnCourseList.Size = New System.Drawing.Size(129, 38)
-        Me.btnCourseList.TabIndex = 2
-        Me.btnCourseList.Text = "Course List"
-        Me.btnCourseList.UseVisualStyleBackColor = False
         '
         'lblComments
         '
@@ -131,7 +119,7 @@ Partial Class frmStudent
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(30, 354)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 20)
+        Me.Label1.Size = New System.Drawing.Size(89, 13)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "(Don't Touch!)"
         '
@@ -139,7 +127,7 @@ Partial Class frmStudent
         '
         Me.btnEdit.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEdit.Location = New System.Drawing.Point(226, 311)
+        Me.btnEdit.Location = New System.Drawing.Point(393, 311)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(129, 38)
         Me.btnEdit.TabIndex = 9
@@ -152,7 +140,7 @@ Partial Class frmStudent
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label2.Location = New System.Drawing.Point(20, 171)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 20)
+        Me.Label2.Size = New System.Drawing.Size(68, 13)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Comments:"
         '
@@ -162,7 +150,7 @@ Partial Class frmStudent
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label3.Location = New System.Drawing.Point(20, 109)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(117, 20)
+        Me.Label3.Size = New System.Drawing.Size(83, 13)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Date of Birth:"
         '
@@ -172,7 +160,7 @@ Partial Class frmStudent
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label4.Location = New System.Drawing.Point(475, 109)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 20)
+        Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Status:"
         '
@@ -182,7 +170,7 @@ Partial Class frmStudent
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label5.Location = New System.Drawing.Point(20, 35)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(60, 20)
+        Me.Label5.Size = New System.Drawing.Size(43, 13)
         Me.Label5.TabIndex = 13
         Me.Label5.Text = "Name:"
         '
@@ -192,13 +180,13 @@ Partial Class frmStudent
         Me.Label6.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label6.Location = New System.Drawing.Point(475, 35)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(102, 20)
+        Me.Label6.Size = New System.Drawing.Size(72, 13)
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Student ID:"
         '
         'frmStudent
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 392)
         Me.Controls.Add(Me.Label6)
@@ -213,7 +201,6 @@ Partial Class frmStudent
         Me.Controls.Add(Me.lblStatus)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblComments)
-        Me.Controls.Add(Me.btnCourseList)
         Me.Controls.Add(Me.lblDOB)
         Me.Controls.Add(Me.lblFullName)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -228,7 +215,6 @@ Partial Class frmStudent
 
     Friend WithEvents lblFullName As Label
     Friend WithEvents lblDOB As Label
-    Friend WithEvents btnCourseList As Button
     Friend WithEvents lblComments As Label
     Friend WithEvents btnExit As Button
     Friend WithEvents lblStatus As Label
