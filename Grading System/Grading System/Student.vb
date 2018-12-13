@@ -75,7 +75,14 @@ Public Class frmStudent
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        frmEditStudent.intID = intStudentID
+        frmEditStudent.txtStudentFirstName = txtFirstName
+        frmEditStudent.txtStudentLastName = txtLastName
+        frmEditStudent.txtStudentDOB = txtDOB
+        frmEditStudent.txtStudentStatus = txtStatus
+        frmEditStudent.txtStudentComments = txtComments
         frmEditStudent.Show()
+
 
     End Sub
 End Class

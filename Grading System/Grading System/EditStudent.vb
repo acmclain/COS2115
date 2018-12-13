@@ -3,8 +3,21 @@ Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class frmEditStudent
+    Public intID As Integer
+
+    Public txtStudentFirstName As String
+    Public txtStudentLastName As String
+    Public txtStudentDOB As String
+    Public txtStudentStatus As String
+    Public txtStudentComments As String
+
     Private Sub frmEditStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmStudent.Hide()
+        txtFirst.Text = txtStudentFirstName.Trim
+        txtLast.Text = txtStudentLastName.Trim
+        txtDOB.Text = txtStudentDOB.Trim
+        txtStatus.Text = txtStudentStatus.Trim
+        txtComments.Text = txtStudentComments.Trim
 
     End Sub
 
@@ -14,20 +27,16 @@ Public Class frmEditStudent
     End Sub
 
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        'Using connection As New SqlConnection(connectionString)
-            'connection.Open()
-            'MessageBox.Show("Database is open")
+        Using connection As New SqlConnection(connectionString)
+            connection.Open()
 
-            'Dim Command = New SqlCommand("INSERT INTO Students (FirstName, LastName, DOB, Status, Comments) VALUES ('" & txtFirst.Text & "','" & txtLast.Text & "','" & txtDOB.Text & "','" & txtStatus.Text & "','" & txtComments.Text & "')", connection)
+            Dim Command = New SqlCommand("UPDATE Students SET FirstName = '" & txtFirst.Text & "', LastName = '" & txtLast.Text & "', DOB = '" & txtDOB.Text & "', Status = '" & txtStatus.Text & "', Comments = '" & txtComments.Text & "' WHERE StudentID = '" & intID & "'", connection)
 
-            'Command.ExecuteNonQuery()
+            Command.ExecuteNonQuery()
 
-            'MessageBox.Show("Row added")
+            connection.Close()
 
-            'connection.Close()
-            'MessageBox.Show("Database is closed")
-
-        'End Using
+        End Using
 
         Me.Close()
         frmStudent.Show()
