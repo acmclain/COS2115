@@ -36,6 +36,7 @@ Partial Class frmStudent
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblFullName
@@ -127,7 +128,7 @@ Partial Class frmStudent
         '
         Me.btnEdit.BackColor = System.Drawing.Color.DarkOrchid
         Me.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnEdit.Location = New System.Drawing.Point(393, 311)
+        Me.btnEdit.Location = New System.Drawing.Point(215, 311)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(129, 38)
         Me.btnEdit.TabIndex = 9
@@ -184,11 +185,23 @@ Partial Class frmStudent
         Me.Label6.TabIndex = 14
         Me.Label6.Text = "Student ID:"
         '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.DarkOrchid
+        Me.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnBack.Location = New System.Drawing.Point(386, 312)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(122, 38)
+        Me.btnBack.TabIndex = 15
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = False
+        '
         'frmStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(729, 392)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -227,4 +240,5 @@ Partial Class frmStudent
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents btnBack As Button
 End Class

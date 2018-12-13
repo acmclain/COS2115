@@ -15,7 +15,7 @@ Public Class frmStudent
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
-        frmMainMenu.Show()
+        frmMainMenu.Close()
     End Sub
     Private Sub frmStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         frmMainMenu.Hide()
@@ -84,5 +84,9 @@ Public Class frmStudent
         frmEditStudent.Show()
 
 
+    End Sub
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        Me.Close()
+        frmMainMenu.Show()
     End Sub
 End Class
