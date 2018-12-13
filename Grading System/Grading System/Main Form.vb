@@ -28,7 +28,7 @@ Public Class frmMainMenu
             dataReader = command.ExecuteReader()
             While dataReader.Read
                 'Add each student and student id to dictionary.
-                comboSource.Add(dataReader("StudentID"), dataReader("FirstName").ToString() & dataReader("LastName"))
+                comboSource.Add(dataReader("StudentID"), dataReader("FirstName").ToString().Trim & " " & dataReader("LastName"))
             End While
             'Display each student with hidden corresponding key in the combo box.
             cboStudents.DataSource = New BindingSource(comboSource, Nothing)

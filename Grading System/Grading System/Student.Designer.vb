@@ -78,7 +78,7 @@ Partial Class frmStudent
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(122, 38)
         Me.btnExit.TabIndex = 4
-        Me.btnExit.Text = "Exit"
+        Me.btnExit.Text = "Close ALL"
         Me.btnExit.UseVisualStyleBackColor = False
         '
         'lblStatus
