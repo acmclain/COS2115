@@ -17,16 +17,16 @@ Public Class frmAddStudent
 
         Using connection As New SqlConnection(connectionString)
             connection.Open()
-            MessageBox.Show("Database is open")
+            ' MessageBox.Show("Database is open")
 
             Dim Command = New SqlCommand("INSERT INTO Students (FirstName, LastName, DOB, Status, Comments) VALUES ('" & txtFirst.Text.Trim & "','" & txtLast.Text.Trim & "','" & txtDOB.Text.Trim & "','" & txtStatus.Text.Trim & "','" & txtComments.Text.Trim & "')", connection)
 
             Command.ExecuteNonQuery()
 
-            MessageBox.Show("Row added")
+            'MessageBox.Show("Row added")
 
             connection.Close()
-            MessageBox.Show("Database is closed")
+            'MessageBox.Show("Database is closed")
 
         End Using
 
