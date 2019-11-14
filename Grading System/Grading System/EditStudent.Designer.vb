@@ -174,4 +174,8 @@ Partial Class frmEditStudent
     Friend WithEvents txtDOB As TextBox
     Friend WithEvents txtLast As TextBox
     Friend WithEvents txtFirst As TextBox
+
+    Private Sub FrmEditStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

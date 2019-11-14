@@ -1,6 +1,6 @@
 ﻿Module Module1
     'Mercy
-    Public connectionString As String = "Data Source = DESKTOP-II3CLP1\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
+    Public connectionString As String = "Data Source = DESKTOP-II3CLP1\SQLEXPRESS;Initial Catalog=PeanutButter;Integrated Security=true"
     'Hannah
     'Public connectionString As String = "Data Source = MIS-W10-030\SQLEXPRESS;Initial Catalog=LPA;Integrated Security=true"
     'Andrew

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmMainMenu
+Partial Class frmHomePage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,72 +22,68 @@ Partial Class frmMainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.cboStudents = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.txtPeanut = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'btnExit
+        'DataGridView1
         '
-        Me.btnExit.Location = New System.Drawing.Point(313, 155)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
-        Me.btnExit.TabIndex = 1
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(745, 150)
+        Me.DataGridView1.TabIndex = 0
         '
-        'cboStudents
+        'txtPeanut
         '
-        Me.cboStudents.BackColor = System.Drawing.Color.Lavender
-        Me.cboStudents.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboStudents.FormattingEnabled = True
-        Me.cboStudents.Location = New System.Drawing.Point(43, 45)
-        Me.cboStudents.Margin = New System.Windows.Forms.Padding(2)
-        Me.cboStudents.Name = "cboStudents"
-        Me.cboStudents.Size = New System.Drawing.Size(177, 21)
-        Me.cboStudents.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(40, 30)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Student List"
+        Me.txtPeanut.Location = New System.Drawing.Point(111, 309)
+        Me.txtPeanut.Name = "txtPeanut"
+        Me.txtPeanut.Size = New System.Drawing.Size(100, 26)
+        Me.txtPeanut.TabIndex = 1
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(299, 45)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAdd.Location = New System.Drawing.Point(111, 254)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(105, 21)
-        Me.btnAdd.TabIndex = 4
-        Me.btnAdd.Text = "Add Student"
+        Me.btnAdd.Size = New System.Drawing.Size(94, 37)
+        Me.btnAdd.TabIndex = 2
+        Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'frmMainMenu
+        'frmHomePage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 237)
+        Me.ClientSize = New System.Drawing.Size(748, 431)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.cboStudents)
-        Me.Controls.Add(Me.btnExit)
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.Name = "frmMainMenu"
+        Me.Controls.Add(Me.txtPeanut)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Name = "frmHomePage"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Life Prep Academy"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnExit As Button
-    Friend WithEvents cboStudents As ComboBox
+
     Friend WithEvents Label1 As Label
+    Friend WithEvents iconStudents As PictureBox
+    Friend WithEvents iconVolunteer As PictureBox
+    Friend WithEvents iconContacts As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents btnExit As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents txtPeanut As TextBox
     Friend WithEvents btnAdd As Button
 End Class

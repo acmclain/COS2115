@@ -2,11 +2,16 @@ C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.exe.con
 C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.exe
 C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.pdb
 C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\Grading System.xml
-C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbprojResolveAssemblyReference.cache
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.Resources.resources
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbproj.GenerateResource.Cache
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.exe
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.xml
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.pdb
 C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmAddStudent.resources
-C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmMainMenu.resources
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbprojAssemblyReference.cache
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading System.vbproj.CoreCompileInputs.cache
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.frmHomePage.resources
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.EditStudent.resources
+C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\EagleEnterprises.mdf
+C:\VB2018\COS2115\Grading System\Grading System\bin\Debug\EagleEnterprises_log.ldf
+C:\VB2018\COS2115\Grading System\Grading System\obj\Debug\Grading_System.data.resources
